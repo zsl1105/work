@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>{% block title %}首页{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/user/js/lib/bootstrap-3.3.7-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{%static '/user/js/app/base.css'%}">
+    <link rel="stylesheet" href="{%static '/user/js/lib/jquery/style.css'%}">
+    <link rel="stylesheet" href="{%static '/user/js/lib/login/css/font_googleapis.css'%}">
+    <link rel="stylesheet" href="{%static '/user/js/lib/login/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static '/user/js/lib/login/css/style.css'%}">
+    <style>
+        #aaa {
+            border: solid 1px rosybrown;
+        }
+
+        #aaa p a, #aaa p a:link, #aaa p a:visited {
+            width: 100%;
+            height: 100%;
+            display: block;
+            font-size: 14px;
+            color: #707070;
+            margin-bottom: 1px;
+        }
+
+
+    </style>
+</head>
+<body>
+{% block daohang %}
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'user:index' %}">首页</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                {% if request.session.loginuser %}
+                <li class="active"><a href="#">{{request.session.loginuser.name}}，欢迎您登录....</a></li>
+                <li><a href="{% url 'user:register' %}">注册</a></li>
+                <li><a href="{% url 'user:logout' %}">退出登录</a></li>
+                {% else %}
+                <li class="active"><a href="{% url 'user:login'%}">登录</a></li>
+                <li><a href="{% url 'user:register'%}">注册</a></li>
+                {% endif %}
+            </ul>
+            <form class="navbar-form navbar-left" action="/search/" method="get">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" name="q" class="form-control" placeholder="输入查询内容">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#">{{request.session.loginuser.name}}</a></li>-->
+                {% if request.session.loginuser %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">操作 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'user:showinfo' %}">个人信息</a></li>
+                        <li><a href="{% url 'user:showlist' %}">查看所有用户</a></li>
+                        <li><a href="{% url 'user:changeinfo' %}">修改个人信息</a></li>
+                        {% if request.session.loginuser.name == 'zsl' %}
+                        <li><a href="/admin/">后台管理</a></li>
+
+                        {% endif %}
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{% url 'user:article_add' %}">发表文章</a></li>
+                        <li><a href="{% url 'user:article_list' %}">我的个人文章</a></li>
+                        <li><a href="{% url 'user:logout' %}">用户退出</a></li>
+                    </ul>
+                </li>
+                {% else %}
+                <li><a href="#">未登录用户</a></li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+{% endblock %}
+
+{# 中间 内容 部分 ————————————————————————————————————————————————————————#}
+
+<div class="container">
+    <div class="row">
+        {% block mid %}
+        <div class="col-md-6 col-md-offset-1" style="margin-top: 50px">
+            <p style="font-size:x-large">热门项目:
+            <p>
+                <ul>
+                    {% for article in page.object_list %}
+                    <li>{{article.project|truncatechars:100|safe}}
+                    </li>
+                    <br>
+
+                    <li style="font-size:large"><a href="{% url 'user:article_show' article.id%}">{{article.name|truncatechars:20|safe}}</a>
+                    </li>
+                    <li style="font-size:medium">
+            <p>分类：{{article.area|truncatechars:20|safe}}</p></li>
+            <hr>
+            {% endfor %}
+            </ul>
+            <nav aria-label="Page navigation" style="text-align: center">
+                <ul class="pagination">
+                    <li>
+                        <a href="/?pageNow=1" aria-label="Previous">
+                            <span aria-hidden="true">首页</span>
+                        </a>
+                    </li>
+                    {% if page.has_previous %}
+                    <li>
+                        <a href="/?pageNow={{page.previous_page_number}}" aria-label="Next">
+                            <span aria-hidden="true">上一页</span>
+                        </a>
+                    </li>
+                    {% endif %}
+
+
+                    {% if page.has_next %}
+                    <li>
+                        <a href="/?pageNow={{page.next_page_number}}" aria-label="Next">
+                            <span aria-hidden="true">下一页</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    <li>
+                        <a href="/?pageNow={{page.paginator.num_pages}}" aria-label="Next">
+                            <span aria-hidden="true">尾页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span aria-hidden="true">{{ page.number }}页/{{ page.paginator.num_pages }}页</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        {% endblock %}
+
+    </div>
+</div>
+
+
+{% block content %}{% endblock %}
+</body>
+</html>

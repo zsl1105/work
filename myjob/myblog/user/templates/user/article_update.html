@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block title %}修改文章{% endblock %}
+{% block lunbo %}{% endblock %}
+{% block left %}{% endblock %}
+{% block mid %}{% endblock %}
+{% block right %}{% endblock %}
+
+{% block content %}
+<script src="/static/tiny_mce/tiny_mce.js"></script>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-7 col-md-offset-2">
+                <div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="mima">
+                            <div class="panel panel-default zhuce1">
+
+                                <div class="panel-body">
+                                    <form class="form-horizontal" action="/article_update/{{article.id}}/"
+                                          method="post">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="col-md-12"><label for="pwd1">项目名：{{article.name}}</label></div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">领域</label>
+                                                <h5 style="text-align: center ; color: red ;" id="msg">{{msg}}</h5>
+                                                <input type="text" class="form-control" name="area" required="required"
+                                                       id="area" placeholder="请输入领域" value="{{article.area}}">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">平台</label>
+                                                <input type="text" class="form-control" name="platform" id="pwd1"
+                                                       value="{{article.platform}}">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">地址</label>
+                                                <input type="text" class="form-control" name="address" id="pwd1"
+                                                       value="{{article.address}}">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">网址</label>
+                                                <input type="text" class="form-control" name="web" id="pwd1"
+                                                       value="{{article.web}}">
+                                            </div>
+                                            <div class="col-md-12"><label for="pwd1">创立时间：{{article.start_time}}</label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">状态</label>
+                                                <input type="text" class="form-control" name="state" id="pwd1"
+                                                       value="{{article.state}}">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">电话</label>
+                                                <input type="text" class="form-control" name="phone" id="pwd1"
+                                                       value="{{article.phone}}">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label for="pwd1">邮箱</label>
+                                                <input type="text" class="form-control" name="mail" id="pwd1"
+                                                       value="{{article.mail}}">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <label for="pwd3">项目介绍</label>
+                                                <textarea class="form-control" rows="15" id="pwd3" name="project">{{article.project|safe}}</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <label for="pwd3">融资历史</label>
+                                                <textarea class="form-control" rows="15" id="pwd3" name="finance">{{article.finance|safe}}</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <label for="pwd3">公司简介</label>
+                                                <textarea class="form-control" rows="15" id="pwd3" name="introduction">{{article.introduction|safe}}</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-md-12">
+                                                <label for="pwd3">公司名</label>
+                                                <textarea class="form-control" rows="15" id="pwd3" required="required"
+                                                          name="company">{{article.company|safe}}</textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-sm-3 col-sm-offset-10">
+                                                <button type="submit" id="btn" class="btn btn-primary zhucebtn2"
+                                                        onclick="return window.confirm('确认修改吗？？？')">
+                                                    修改项目
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

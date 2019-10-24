@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}详情{% endblock %}
+{% block lunbo %}{% endblock %}
+{% block left %}{% endblock %}
+{% block mid %}{% endblock %}
+{% block right %}{% endblock %}
+
+{% block content %}
+<h5 style="text-align: center ; color: red ;" id="msg">{{msg}}</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-9 col-md-offset-2">
+                <div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="mima">
+                            <div class="panel panel-default zhuce1">
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label for="pwd1">详情</label>
+                                            {% if request.session.loginuser %}
+                                            <label style="float:right" for="pwd1"><a href="/article_update/{{at.id}}/">修改 </a></label>
+                                            {% endif %}
+                                            <hr>
+                                            <h2 style="text-align: center ">{{at.name}}</h2>
+                                            <hr>
+                                            <h5 style="text-align: right">
+
+                                                领域：{{at.area}} |
+                                                平台：{{at.platform}} |
+                                                地址：{{at.address}} |
+                                                网址：{{at.web}} |
+                                                创立时间：{{at.start_time}} |
+                                                状态：{{at.state}}
+                                                <hr>
+                                                电话：{{at.phone}} |
+                                                邮箱：{{at.mail}}
+                                            </h5>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h4>项目介绍：</h4>
+                                        <div class="col-md-12" style="text-indent: 2em;">
+                                            <h4>{{at.project|safe}}</h4>
+                                        </div>
+                                    </div>
+                                    —————————————————————————————————————————————————————————
+                                    <div class="form-group">
+                                        <h4>融资历史：</h4>
+                                        <div class="col-md-12" style="text-indent: 2em;">
+                                            <h4>{{at.finance|safe}}</h4>
+                                        </div>
+                                    </div>
+                                    —————————————————————————————————————————————————————————
+                                    <div class="form-group">
+                                        <h4>公司简介：</h4>
+                                        <div class="col-md-12" style="text-indent: 2em;">
+                                            <h4>{{at.introduction|safe}}</h4>
+                                        </div>
+                                    </div>
+                                    —————————————————————————————————————————————————————————
+                                    <div class="form-group">
+                                        <h4>公司：</h4>
+                                        <div class="col-md-12" style="text-indent: 2em;">
+                                            <h4>{{at.company|safe}}</h4>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

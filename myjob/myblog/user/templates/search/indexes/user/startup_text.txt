@@ -1,0 +1,14 @@
+{{ object.title }}
+{{ object.name }}
+{{ object.area }}
+{{ object.platform }}
+{{ object.address }}
+{{ object.web }}
+{{ object.start_time }}
+{{ object.state }}
+{{ object.phone }}
+{{ object.mail }}
+{{ object.project }}
+{{ object.finance }}
+{{ object.introduction }}
+{{ object.company }}

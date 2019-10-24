@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title %}搜索结果{% endblock %}
+{% load static %}
+
+
+{% block mid %}
+<div class="container">
+    <div class="row">
+        {% if query %}
+        <!--导出按钮-->
+        <div class="top-panel">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">导出格式<span
+                        class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="exportTo('csv');" href="javascript://">CSV</a></li>
+                    <li><a onclick="exportTo('txt');" href="javascript://">TXT</a></li>
+                    <li><a onclick="exportTo('xls');" href="javascript://">XLS</a></li>
+                    <li><a onclick="exportTo('sql');" href="javascript://">SQL</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--表格-->
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped">
+                <caption>搜索结果如下：</caption>
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>项目名</th>
+                    <th>分类</th>
+                    <th>公司名</th>
+                    <th>项目介绍</th>
+                    <th>融资历史</th>
+                    <th>公司简介</th>
+                    <th>邮箱</th>
+                    <th>电话</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for result in page.object_list %}
+                <tr>
+                    <th scope="row">{{result.object.id}}</th>
+                    <td>{{result.object.name}}</td>
+                    <td>{{result.object.area}}</td>
+                    <td>{{result.object.company}}</td>
+                    <td>{{result.object.project|safe}}</td>
+                    <td>{{result.object.finance|safe}}</td>
+                    <td>{{result.object.introduction|safe}}</td>
+                    <td>{{result.object.mail}}</td>
+                    <td>{{result.object.phone}}</td>
+                    <td><a href="/article_show/{{result.object.id}}/">查看</a></td>
+                </tr>
+                {% empty %}
+                <p>啥也没找到</p>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% if page.has_previous or page.has_next %}
+        <!--分页-->
+        <div>
+            {% if page.has_previous %}
+            <a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">
+                {% endif %}
+
+                <span>&laquo; 上一页</span>
+                {% if page.has_previous %}
+            </a>
+            {% endif %}
+            |
+            {% if page.has_next %}
+            <a href="?q={{ query }}&amp;page={{ page.next_page_number }}">
+                {% endif %}
+                <span>下一页 &raquo;</span>
+                {% if page.has_next %}
+            </a>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+
+
+<script src="{% static '/user/js/lib/jquery/jquery.js' %}"></script>
+<script src="{% static '/user/js/lib/bootstrap-3.3.7-dist/js/bootstrap.js' %}"></script>
+<script src="{% static '/user/js/lib/jquery/tableExporter.js' %}"></script>
+<script src="{% static '/user/js/lib/jquery/main.js' %}"></script>
+
+{% endblock %}
+
+
+

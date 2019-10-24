@@ -1,0 +1,2208 @@
+2019-08-29 09:56:32 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 09:57:15 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 09:59:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 10:00:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 10:01:31 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 10:01:38 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 10:01:44 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 10:01:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/78653> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 36, in parse
+    item["start_date"] = start_date
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\item.py", line 73, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'IheimaItem does not support field: start_date'
+2019-08-29 11:13:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/product/40296> (referer: http://www.iheima.com/enterprise-library/detail/40296)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 57, in product_parse
+    item["name"] = name
+TypeError: 'str' object does not support item assignment
+2019-08-29 11:13:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/product/40296> (referer: http://www.iheima.com/enterprise-library/detail/40296)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 58, in product_parse
+    item["name"] = name
+TypeError: 'str' object does not support item assignment
+2019-08-29 11:16:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/product/40296> (referer: http://www.iheima.com/enterprise-library/detail/40296)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 58, in product_parse
+    item["name"] = name
+TypeError: 'str' object does not support item assignment
+2019-08-29 11:18:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/product/40296> (referer: http://www.iheima.com/enterprise-library/detail/40296)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 58, in product_parse
+    item["name"] = name
+TypeError: 'str' object does not support item assignment
+2019-08-29 14:52:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50268> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50266> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50265> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50273> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50283> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50287> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50291> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50292> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50295> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50294> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50296> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50298> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50299> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50301> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50303> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50304> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50309> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50315> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50318> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50322> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50324> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50326> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50328> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50329> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50332> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50334> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50336> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50339> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50340> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50348> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50351> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50356> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:50 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50359> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50360> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50365> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50368> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50370> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50371> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50369> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50372> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50373> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50374> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50376> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50377> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50384> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50394> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50404> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50405> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50406> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50409> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50407> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50414> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50417> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50419> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50420> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50426> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50428> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50433> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50435> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50437> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50438> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50445> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50446> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50447> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50448> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50449> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50450> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50457> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50456> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50460> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50468> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50469> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50472> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50470> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50471> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50475> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50485> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50486> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50489> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50493> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50498> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 14:52:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/50507> (referer: None)
+Traceback (most recent call last):
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "c:\users\92375\appdata\local\programs\python\python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 28, in parse
+    start_time = response.xpath('//div[@class="enterprise-desc"]/ul/li[3]/text()').extract_first().split('：')[-1]
+AttributeError: 'NoneType' object has no attribute 'split'
+2019-08-29 15:54:51 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-08-29 15:54:51 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\crawler.py", line 86, in crawl
+    self.engine = self._create_engine()
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\crawler.py", line 111, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\core\engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\core\scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "c:\users\92375\envs\spider_env1\lib\site-packages\scrapy\utils\misc.py", line 46, in load_object
+    mod = import_module(module)
+  File "c:\users\92375\envs\spider_env1\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\startup\iheima\iheima\pipelines.py", line 16, in <module>
+    from pymysql import cursors
+ModuleNotFoundError: No module named 'pymysql'

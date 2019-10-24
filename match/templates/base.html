@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    {% load static %}
+    <link rel="apple-touch-icon" sizes="76x76" src="{% static 'home/img/apple-icon.png'%}">
+    <link rel="icon" type="image/png" src="{% static 'home/img/favicon.png'%}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{% block title %}首页{% endblock %}</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{%static 'home/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'home/css/now-ui-kit.css'%}">
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="{%static 'home/css/demo.css'%}">
+    <!-- Canonical SEO -->
+    <!--  Social tags      -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+
+</head>
+
+<body class="landing-page sidebar-collapse">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+        <div class="dropdown button-dropdown">
+            <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                <span class="button-bar"></span>
+                <span class="button-bar"></span>
+                <span class="button-bar"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-header">大赛介绍</a>
+                <a class="dropdown-item" href="{% url 'home:plan' %}">大赛方案</a>
+                <a class="dropdown-item" href="{% url 'home:walk' %}">走进大赛</a>
+                <a class="dropdown-item" href="{% url 'home:leader' %}">领导关怀</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url 'home:notice' %}">通知公告</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% url 'home:news' %}">新闻中心</a>
+            </div>
+        </div>
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="{% url 'home:index' %}" rel="tooltip" title="" data-placement="bottom">
+                大赛导航
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                    aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end"
+             data-nav-image="{% static 'home/img/blurred-image-1.jpg'%}">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home:mode' %}">我要参赛</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home:contact' %}">联系我们</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
+                       href="#CreativeTim" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                        <p class="d-lg-none d-xl-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
+                       href="#CreativeTim" target="_blank">
+                        <i class="fa fa-facebook-square"></i>
+                        <p class="d-lg-none d-xl-none">Facebook</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#"
+                       target="_blank">
+                        <i class="fa fa-instagram"></i>
+                        <p class="d-lg-none d-xl-none">Instagram</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+
+    <!-- header -->
+    <div class="page-header page-header-small">
+        <div class="page-header-image" data-parallax="true"
+             style="background-image: url({% static 'home/img/bg6.jpg'%});">
+        </div>
+        <div class="container">
+            <div class="content-center">
+
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    {% block content %}
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">大赛背景</h2>
+                    <h5 class="description" style="color:black">
+                        为切实落实江苏省委省政府关于人才工作的战略部署，整合创新创业资源，促进国内外创新创业项目对接江苏高新产业资源，大力吸引和集聚海外高层次创新创业人才，驱动产业转型升级，促进产业协同发展，为推动“高质量发展走在前列”、建设“强富美高”新江苏提供人才支撑，拟于
+                        2019年 10—12月举办2019年江苏省海外留学人才创新创业大赛，通过本次大赛汇资源、促对接，搭平台、展成果，聚英才、落项目。
+                    </h5>
+                </div>
+            </div>
+            <div class="separator separator-primary"></div>
+            <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left"
+                             style="background-image: url({% static 'home/img/login.jpg'%})">
+                            <!-- First image on the left side -->
+                            <!--                                <p class="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"-->
+                            <br>
+                            <br>
+                            </p>
+                        </div>
+                        <!-- Second image on the left side of the article -->
+                        <div class="image-container"
+                             style="background-image: url({% static 'home/img/bg3.jpg'%})"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- First image on the right side, above the article -->
+                        <div class="image-container image-right"
+                             style="background-image: url({% static 'home/img/bg1.jpg'%})"></div>
+                        <h3>大赛创新和特色</h3>
+                        <p style="font-size:18px">
+                            大赛创新和特色For a start, it does not automatically follow that a record amount of ice will melt
+                            this summer. More important for determining the size of the annual thaw is the state of the
+                            weather as the midnight sun approaches and temperatures rise. But over the more than 30
+                            years of satellite records, scientists have observed a clear pattern of decline,
+                            decade-by-decade.
+                        </p>
+                        <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
+                            that process will continue whatever happens with climate change. Even if the Arctic
+                            continues to be one of the fastest-warming regions of the world, it will always be plunged
+                            into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural
+                            reasons, there’s huge variety of the state of the ice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tlinks">Collect from <a href="#">网站建设</a></div>
+    <div class="section section-team text-center">
+        <div class="container">
+            <h2 class="title">参赛对象</h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/avatar.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title"> 有海外背景</h4>
+                            <h4 class="title"> 有意愿在苏发展的创业者</h4>
+                            <h4 class="title"> 创业团队</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/ryan.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">
+                                拥有我省重点发展的新一代信息技术、高端软件和信息服务、生物技术和新医药、新材料、高端装备制造、节能环保、新能源和能源互联网、新能源汽车、空天海洋装备、数字创意等十大战略性新兴产业领域科技项目</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/eva.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">优先邀请已获得<br>风投的项目持有者</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-team text-center">
+        <div class="container">
+            <h2 class="title">大赛奖励</h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/prize1.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title"> 金奖奖励3万元现金</h4>
+                            <h4 class="title"> 银奖奖励2万元现金</h4>
+                            <h4 class="title"> 其他14组进入决赛的团队或个人奖励1万元现金</h4>
+                            <h4 class="title"> 获奖奖金在比赛结束当日发放</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/prize2.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">获邀未获奖参赛者差旅费发放标准（包含国际往返交通费，拟亚洲地区 3000元/人，欧美及大洋洲地区 6000元/人，国内 2000元
+                                /人），凭有效证件、票据凭证（三个月之内的回国机票和登机牌），获奖的参赛者不予发放差旅费</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <img src="{% static 'home/img/prize3.jpg'%}" alt="Thumbnail Image"
+                                 class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">获奖项目落户后将有机会获得江苏省内区级奖励 50万，市级300-500万以及税收减免，房租办公补贴等多种政策、资金扶持</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+    <footer class="footer footer-default">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{% url 'home:index' %}">
+                            大赛主办方
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:index' %}">
+                            关于我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:index' %}">
+                            大赛动态
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home:index' %}">
+                            许可证
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                2019年江苏省海外留学人才创新创业大赛
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<!--   Core JS Files   -->
+<script src="{% static 'home/js/core/jquery.3.2.1.min.js'  type='text/javascript' %}"></script>
+<script src="{% static 'home/js/core/popper.min.js'  type='text/javascript' %}"></script>
+<script src="{% static 'home/js/core/bootstrap.min.js'  type='text/javascript' %}"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{% static 'home/js/plugins/bootstrap-switch.js' %}"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{% static 'home/js/plugins/nouislider.min.js' type='text/javascript' %}"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="{% static 'home/js/plugins/bootstrap-datepicker.js' type='text/javascript' %}"></script>
+<!-- Share Library etc -->
+<script src="{% static 'home/js/plugins/jquery.sharrre.js' type='text/javascript' %}"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="{% static 'home/js/now-ui-kit.js' type='text/javascript' %}"></script>
+
+</html>

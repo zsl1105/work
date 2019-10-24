@@ -1,0 +1,50 @@
+2019-08-28 15:07:41 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/2315> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 30, in parse
+    yield scrapy.Request(product_base_url, callback='product_parse')
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\http\request\__init__.py", line 31, in __init__
+    raise TypeError('callback must be a callable, got %s' % type(callback).__name__)
+TypeError: callback must be a callable, got str
+2019-08-28 15:08:25 [scrapy.core.scraper] ERROR: Spider error processing <GET http://www.iheima.com/enterprise-library/detail/2315> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\startup\iheima\iheima\spiders\run.py", line 30, in parse
+    yield scrapy.Request(product_base_url, callback='product_parse')
+  File "C:\Users\92375\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\http\request\__init__.py", line 31, in __init__
+    raise TypeError('callback must be a callable, got %s' % type(callback).__name__)
+TypeError: callback must be a callable, got str

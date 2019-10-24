@@ -20,6 +20,4 @@ headers = {
 
 response = requests.request("GET", url, headers=headers)
 html = json.loads(response.text)
-
-
 print(html)

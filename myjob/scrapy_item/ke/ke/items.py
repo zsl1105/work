@@ -9,6 +9,10 @@ import scrapy
 
 
 class KeItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    company_area = scrapy.Field()
+    adress = scrapy.Field()
+    start_time = scrapy.Field()
+    project = scrapy.Field()
+    finance = scrapy.Field()
+    company = scrapy.Field()

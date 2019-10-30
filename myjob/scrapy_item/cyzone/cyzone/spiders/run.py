@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from cyzone.items import CyzoneItem
-from lxml import etree
-import requests
-import time
 
 
 class RunSpider(scrapy.Spider):
     name = 'run'
     allowed_domains = ['www.cyzone.cn']
-    start_urls = ['https://www.cyzone.cn/company/list-0-0-859-0-0/0']
+    start_urls = ['https://www.cyzone.cn/company/list-0-0-0-0-0/0']  # 网站首页
 
     def parse(self, response):
         item = CyzoneItem()
@@ -17,9 +14,9 @@ class RunSpider(scrapy.Spider):
         next_url_list = response.xpath('//*[@id="pages"]/a')
         for content in content_list:
             name = content.xpath('.//td[2]/a/span/text()')
-            stage = content.xpath('.//td[3]/a/text()')
-            area = content.xpath('.//td[4]/a/text()')
-            datetime = content.xpath('.//td[5]//text()')
+            stage = content.xpath('.//td[4]//text()')
+            area = content.xpath('.//td[5]//text()')
+            datetime = content.xpath('.//td[6]//text()')
             content_url = content.xpath('.//td[2]/a/@href')
             try:
                 if name:
@@ -27,27 +24,20 @@ class RunSpider(scrapy.Spider):
                 if stage:
                     stage = stage[0].extract().strip()
                 if area:
-                    area = area[0].extract().strip()
+                    area = ''.join(area.extract()).strip()
                 if datetime:
                     datetime = datetime[0].extract().strip()
                 if content_url:
-                    content_urls = 'https:' + content_url[0].extract().strip()
-                    print(content_urls)
-                    result_response = requests.get(content_urls).text
-                    time.sleep(3)
-                    html = etree.HTML(result_response)
-                    company, web, address, briefs = next_parse(html)
                     item['name'] = name
                     item['stage'] = str(stage)
                     item['area'] = str(area)
                     item['datetime'] = str(datetime)
-                    item['company'] = str(company)
-                    item['web'] = str(web)
-                    item['address'] = str(address)
-                    item['briefs'] = str(briefs)
-                    yield item
+                    content_urls = 'https://www.cyzone.cn' + content_url[0].extract().strip()
+                    print(content_urls)
+                    yield scrapy.Request(content_urls, callback=self.next_parse, meta={"item": item}, dont_filter=True)
+
             except Exception as e:
-                print(e)
+
                 pass
 
         for next_url in next_url_list:
@@ -58,31 +48,38 @@ class RunSpider(scrapy.Spider):
 
                 yield scrapy.Request(result_next_url, callback=self.parse, dont_filter=True)
 
+    def next_parse(self, response):
+        print(response.url)
+        item = response.meta["item"]
+        company = response.xpath('//*[@id="main"]/div[3]/div[1]/ul/li[2]/text()')
+        web = response.xpath('//*[@id="main"]/div[3]/div[1]/ul/li[3]/div/a/@href')
+        address = response.xpath('//*[@id="main"]/div[4]/div/div[2]/div[1]/div[1]/ul/li[2]/span/text()')
+        brief = response.xpath('//div[@class="info-box"]//text()')
 
-def next_parse(html):
-    company = html.xpath('//*[@id="main"]/div[3]/div[1]/ul/li[2]/text()')
-    web = html.xpath('//*[@id="main"]/div[3]/div[1]/ul/li[3]/div/a/@href')
-    address = html.xpath('//*[@id="main"]/div[4]/div/div[2]/div[1]/div[1]/ul/li[2]/span/text()')
-    brief = html.xpath('//div[@class="info-box"]//text()')
+        try:
+            if len(''.join(company.extract()).strip()) != 0:
+                company = ''.join(company.extract()).strip().split('：')[1]
+            else:
+                company = ''
+            if web:
+                web = ''.join(web.extract()).strip()
+            else:
+                web = ''
+            if address:
+                address = ''.join(address.extract()).strip()
+            else:
+                address = ''
+            if brief:
+                briefs = ''.join(brief.extract()).strip()
+            else:
+                briefs = ''
 
-    try:
-        if len(''.join(company).strip()) != 0:
-            company = ''.join(company).strip().split('：')[1]
-        else:
-            company = ''
-        if web:
-            web = ''.join(web).strip()
-        else:
-            web = ''
-        if address:
-            address = ''.join(address).strip()
-        else:
-            address = ''
-        if brief:
-            briefs = ''.join(brief).strip()
-        else:
-            briefs = ''
-        return company, web, address, briefs
-    except Exception as e:
-        print(e)
-        pass
+            item['company'] = str(company)
+            item['web'] = str(web)
+            item['address'] = str(address)
+            item['briefs'] = str(briefs)
+            print(item)
+            # yield item TODO://存数据库时，修改
+        except Exception as e:
+            print(e)
+            pass

@@ -8,6 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import datetime
 
 BOT_NAME = 'cyzone'
 
@@ -18,7 +19,7 @@ NEWSPIDER_MODULE = 'cyzone.spiders'
 # USER_AGENT = 'cyzone (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
@@ -77,8 +78,12 @@ ITEM_PIPELINES = {
     'cyzone.pipelines.CyzonePipeline': 300,
 }
 
-LOG_FILE = "mySpider.log"
+
+# 配置logging日志
+to_day = datetime.datetime.now()
+LOG_FILE = "log/scrapy_{}_{}_{}.log".format(to_day.year, to_day.month, to_day.day)
 LOG_LEVEL = "WARNING"
+# LOG_LEVEL = "INFO"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -9,7 +9,7 @@ import random
 
 class KespiderSpider(scrapy.Spider):
     name = 'kespider'
-    allowed_domains = ['rong.36ke.com']
+    allowed_domains = ['rong.jingdata.com']
     headers = {
         'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36",
     }
@@ -24,15 +24,16 @@ class KespiderSpider(scrapy.Spider):
     #               "INFORMAL", "PRIVATE_REPLACEMENT"]
 
     industry_list = ["E_COMMERCE", "SOCIAL_NETWORK", ]
-    phase_list = ["SEED", "ANGEL", ]
+    phase_list = ["ANGEL", ]
 
     def start_requests(self):
         for industry in self.industry_list:
             for phase in self.phase_list:
-                for i in range(5, 6 ):
+                for i in range(15, 16):
                     try:
-                        url = "https://rong.36kr.com/n/api/column/0/company?phase={}&industry={}&sortField=HOT_SCORE&p={}".format(
+                        url = "https://rong.jingdata.com/n/api/column/0/company?phase={}&industry={}&sortField=HOT_SCORE&p={}".format(
                             phase, industry, str(i))
+                        print(url)
                         yield scrapy.Request(url=url, headers=self.headers, cookies=self.cookeis, callback=self.parse,
                                              dont_filter=True)
                     except Exception as e:
@@ -45,10 +46,10 @@ class KespiderSpider(scrapy.Spider):
                 company_id = data['data']['pageData']['data'][i]['id']
                 company_area = data['data']['pageData']['data'][i]['industryStr']
                 item = KeItem()
-                print(company_id)
-                url = "https://rong.36kr.com/n/api/company/{}?asEncryptedTs=0.042819194793378985&asTs=1571729062861".format(
+                # print(company_id)
+                url = "https://rong.jingdata.com/n/api/company/{}?asEncryptedTs=0.042819194793378985&asTs=1571729062861".format(
                     company_id)
-                print(url)
+                # print(url)
                 yield scrapy.Request(url=url, headers=self.headers, cookies=self.cookeis, callback=self.detail_parse,
                                      meta={'item': item, 'company_area': company_area},
                                      dont_filter=True)

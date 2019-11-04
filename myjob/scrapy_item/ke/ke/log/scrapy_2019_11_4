@@ -1,0 +1,2185 @@
+2019-11-04 09:26:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/18653012?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/19316773?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/19872136?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/20082490?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/21125951?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/21334013?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/22302474?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/22510872?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/22552267?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/23555099?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/24941598?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/25183256?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/25285074?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/26773904?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/11076689?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/1867728?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:53 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/154760?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:27:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/155832?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/155963?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/160567?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/160837?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/161772?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/163183?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/164580?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/165692?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/175517?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/176713?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/177032?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/177403?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/177814?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/177881?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/178089?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/178246?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/180464?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:28:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/1132568?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/1761845?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/1966984?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/2464988?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/2618255?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/2651578?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/3510226?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/4884246?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/5046349?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/5111399?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/5300276?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/5703413?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/6957789?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/7023115?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/7611536?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/7902300?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:29:59 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/8716652?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/9112813?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/10096719?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/10108156?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/10193887?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/11451770?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/11828182?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/11828279?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12031590?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12253385?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12448119?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12459356?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12924375?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/12979572?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/13397236?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/14871157?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:30:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15443690?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15469631?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15494595?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15505017?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15690110?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/15923617?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/16704878?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/18118783?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/26859337?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/28070967?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/28545543?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/28771590?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/28848270?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:31:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/29344781?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:36:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/18653012?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:36:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/19316773?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 09:37:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:37:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:37:55 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:37:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:38:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=11> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:38:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=12> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:38:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=13> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 09:38:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=14> (referer: None)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 46, in parse
+    company_id = data['data']['pageData']['data'][i]['id']
+TypeError: string indices must be integers
+2019-11-04 10:00:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/154547?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=SOCIAL_NETWORK&sortField=HOT_SCORE&p=15)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 10:00:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/65690918?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=E_COMMERCE&sortField=HOT_SCORE&p=15)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 10:00:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/84698396?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=E_COMMERCE&sortField=HOT_SCORE&p=15)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 10:00:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/8985?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=E_COMMERCE&sortField=HOT_SCORE&p=15)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'
+2019-11-04 10:00:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://rong.jingdata.com/n/api/company/24503?asEncryptedTs=0.042819194793378985&asTs=1571729062861> (referer: https://rong.jingdata.com/n/api/column/0/company?phase=ANGEL&industry=E_COMMERCE&sortField=HOT_SCORE&p=15)
+Traceback (most recent call last):
+  File "D:\work\myjob\lib\site-packages\scrapy\utils\defer.py", line 111, in iter_errback
+    yield next(it)
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\lib\site-packages\scrapy\core\spidermw.py", line 83, in evaluate_iterable
+    for r in iterable:
+  File "D:\work\myjob\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\work\myjob\scrapy_item\ke\ke\spiders\kespider.py", line 62, in detail_parse
+    name = company_data["data"]["name"]
+KeyError: 'name'

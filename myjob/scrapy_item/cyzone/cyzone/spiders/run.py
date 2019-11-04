@@ -40,13 +40,13 @@ class RunSpider(scrapy.Spider):
 
                 pass
 
-        for next_url in next_url_list:
-            if next_url.xpath('.//text()').extract()[0] == '下一页':
-                result_next_url = next_url.xpath('.//@href').extract()[0]
-                result_next_url = 'https://www.cyzone.cn' + result_next_url
-                print(result_next_url)
-
-                yield scrapy.Request(result_next_url, callback=self.parse, dont_filter=True)
+        # for next_url in next_url_list:
+        #     if next_url.xpath('.//text()').extract()[0] == '下一页':
+        #         result_next_url = next_url.xpath('.//@href').extract()[0]
+        #         result_next_url = 'https://www.cyzone.cn' + result_next_url
+        #         print(result_next_url)
+        #
+        #         yield scrapy.Request(result_next_url, callback=self.parse, dont_filter=True)
 
     def next_parse(self, response):
         print(response.url)

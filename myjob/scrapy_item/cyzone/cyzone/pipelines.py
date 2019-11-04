@@ -16,11 +16,14 @@ from .settings import MY_SETTINGS
 from pymysql import cursors
 from twisted.enterprise import adbapi
 import copy
+import os
 
 
 class CyzonePipeline(object):
+
     def __init__(self, dbpool):
         self.dbpool = dbpool
+        self.checkFile = "isRunning.txt"
 
     @classmethod
     def from_settings(cls, settings):  # 函数名固定，会被scrapy调用，直接可用settings的值
@@ -65,3 +68,12 @@ class CyzonePipeline(object):
         if failure:
             # 打印错误信息
             print(failure)
+
+    def open_spider(self, spider):
+        f = open(self.checkFile, "w")
+        f.close()
+
+    def close_spider(self, spider):
+        isFileExsit = os.path.isfile(self.checkFile)
+        if isFileExsit:
+            os.remove(self.checkFile)

@@ -1,7 +1,7 @@
 from scrapy.cmdline import execute
 
 import sys
-
+import time
 import os
 
 # __file__ :当前文件夹
@@ -14,4 +14,7 @@ import os
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-execute(['scrapy', 'crawl', 'run'])
+# execute(['scrapy', 'crawl', 'run'])
+while True:
+    os.system("scrapy crawl run")
+    time.sleep(60)

@@ -82,8 +82,8 @@ ITEM_PIPELINES = {
 # 配置logging日志
 to_day = datetime.datetime.now()
 LOG_FILE = "log/scrapy_{}_{}_{}.log".format(to_day.year, to_day.month, to_day.day)
-LOG_LEVEL = "WARNING"
-# LOG_LEVEL = "INFO"
+# LOG_LEVEL = "WARNING"
+LOG_LEVEL = "INFO"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -68,7 +68,8 @@ RANDOM_UA_TYPE = 'random'
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'dangdang.pipelines.DangdangPipeline': 300,
+    # 'dangdang.pipelines.DangdangPipeline': 300,
+    "scrapy_redis.pipelines.RedisPipeline": 100
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -92,3 +93,14 @@ ITEM_PIPELINES = {
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 LOG_LEVEL = "WARNING"
+
+
+# 配置redis数据库
+REDIS_HOST = "127.0.0.1"
+REDIS_PORT = 6379
+# 确保request存储到redis中
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+# 确保所有的爬虫共享相同的去重指纹
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+# 在redis中确保scrapy_redis用到的队列在关机时不会清楚
+SCHEDULER_PERSIST = True

@@ -5,12 +5,15 @@ import requests
 import re
 import time
 from dangdang.items import DangdangItem
+from scrapy_redis import spiders
 
 
-class DangbookSpider(scrapy.Spider):
+class DangbookSpider(spiders.RedisSpider):
     name = 'dangbook'
     allowed_domains = ['dangdang.com']
-    start_urls = ['http://e.dangdang.com/list-DZS-dd_sale-0-1.html']
+    # start_urls = ['http://e.dangdang.com/list-DZS-dd_sale-0-1.html']
+
+    redis_key = "myspider:start_urls"
 
     def parse(self, response):
         first_title_list = response.xpath("//div[contains(@class,'publication')]")

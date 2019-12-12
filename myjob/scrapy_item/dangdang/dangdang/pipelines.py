@@ -19,9 +19,10 @@ class DangdangPipeline(object):
         if item["first_title_name"]:
             self.writer.writerow(
                 [item['first_title_name'], item['second_title_name'], item['third_title_name'], item['authorPenname'],
-                 item['title'], item['descs'], item['originalPrice'], item['lowestPrice'], item['vipPrice'], item['mediaId'],
+                 item['title'], item['descs'], item['originalPrice'], item['lowestPrice'], item['vipPrice'],
+                 item['mediaId'],
                  item['publisher'], item['publish_date'], item['content_num'], item['content_score']])
         return item
 
-    def close_spider(self,spider):
+    def close_spider(self, spider):
         self.file.close()

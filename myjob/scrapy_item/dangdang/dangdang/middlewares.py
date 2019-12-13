@@ -9,12 +9,12 @@ class UserAgentMiddleware(object):
         self.ua = UserAgent(verify_ssl=False)
 
     def process_request(self, request, spider):
-        print('===UserAgentMiddleware process_request==')
+        # print('===UserAgentMiddleware process_request==')
         if self.ua:
             # 显示当前使用的useragent
-            print("********Current UserAgent:%s************")
+            # print("********Current UserAgent:%s************")
             custom_ua = self.ua.random
-            print('custom_ua:',custom_ua)
+            # print('custom_ua:',custom_ua)
             request.headers.setdefault(b'User-Agent', custom_ua)
 
 

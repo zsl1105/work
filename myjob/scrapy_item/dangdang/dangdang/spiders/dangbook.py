@@ -13,7 +13,7 @@ class DangbookSpider(spiders.RedisSpider):
     allowed_domains = ['dangdang.com']
     # start_urls = ['http://e.dangdang.com/list-DZS-dd_sale-0-1.html']
 
-    redis_key = "myspider:start_urls"
+    redis_key = "dangbook:start_urls"
 
     def parse(self, response):
         first_title_list = response.xpath("//div[contains(@class,'publication')]")
@@ -40,7 +40,7 @@ class DangbookSpider(spiders.RedisSpider):
                         if re.search("亲，没有更多内容了", requests.get(next_url).text):
                             print("{}{}已经采集结束{}".format("*" * 10, third_title_name, "*" * 10))
                             break
-                        time.sleep(10)
+                        time.sleep(2)
                         yield scrapy.Request(next_url, callback=self.parse_detail, meta={"item": item},
                                              dont_filter=True)
                         temp = temp + 21
@@ -80,7 +80,7 @@ class DangbookSpider(spiders.RedisSpider):
 
     def parse_detailPage(self, response):
         print("{}书籍详情采集{}{}".format("*" * 10, "*" * 10, response.url))
-        # time.sleep(1)
+        time.sleep(1)
         item = response.meta["item"]
         try:
             publisher = response.xpath("//p[@id='publisher']/span/a/text()").extract_first()

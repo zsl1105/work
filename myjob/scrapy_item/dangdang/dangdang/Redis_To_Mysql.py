@@ -20,7 +20,7 @@ def main():
                     item["descs"], item["title"], item["originalPrice"], item["lowestPrice"], item["vipPrice"],
                     item["mediaId"], item["publisher"], item["publish_date"], item["content_num"],
                     item["content_score"]]
-            sql = "INSERT INTO dangdang(first_title_name, second_title_name, third_title_name, authorPenname, descs, title, originalPrice, lowestPrice, vipPrice, mediaId, publisher, publish_date, content_num, content_score) VALUE (%s,%s,%s,%s,%s,%s,%.2f,%.2f,%.2f,%d,%s,%s,%d,%.2f)"
+            sql = "INSERT INTO dangdang(first_title_name, second_title_name, third_title_name, authorPenname, descs, title, originalPrice, lowestPrice, vipPrice, mediaId, publisher, publish_date, content_num, content_score) VALUE (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
             cur.execute(sql, data)
             mysqlcli.commit()
             cur.close()

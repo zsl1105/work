@@ -6,6 +6,7 @@ import re
 import time
 from dangdang.items import DangdangItem
 from scrapy_redis import spiders
+import datetime
 
 
 class DangbookSpider(spiders.RedisSpider):
@@ -33,30 +34,52 @@ class DangbookSpider(spiders.RedisSpider):
             for second_title_list in first_title.xpath(".//ul/li"):
                 second_title_name = second_title_list.xpath(".//a/h4/@dd_name").extract_first()
                 print("二级标题——————", second_title_name)
-                for third_title_list in second_title_list.xpath(".//ul/a"):
-                    third_title_name = third_title_list.xpath(".//li/@dd_name").extract_first()
-                    print("三级标题——————", third_title_name)
-                    third_title_type = third_title_list.xpath(".//li/@data-type").extract_first()
+                if second_title_list.xpath(".//ul/a"):
+                    for third_title_list in second_title_list.xpath(".//ul/a"):
+                        third_title_name = third_title_list.xpath(".//li/@dd_name").extract_first()
+                        print("三级标题——————", third_title_name)
+                        third_title_type = third_title_list.xpath(".//li/@data-type").extract_first()
+                        item = DangdangItem()
+                        item["first_title_name"] = first_title_name
+                        item["second_title_name"] = second_title_name
+                        item["third_title_name"] = third_title_name
+                        temp = 0
+                        while True:
+                            try:
+                                next_url = "http://e.dangdang.com/media/api.go?action=mediaCategoryLeaf&start={}&end={}&category={}&dimension=dd_sale".format(
+                                    str(temp), str(temp + 20), third_title_type)
+                                print("{}采集{}中{}".format("*" * 10, third_title_name, "*" * 10), next_url)
+                                if re.search("亲，没有更多内容了", requests.get(next_url).text):
+                                    print("{}{}已经采集结束{}".format("*" * 10, third_title_name, "*" * 10))
+                                    break
+                                time.sleep(2)
+                                yield scrapy.Request(next_url, callback=self.parse_detail, headers=headers, meta={"item": item},
+                                                     dont_filter=True)
+                                temp = temp + 21
+                            except Exception as e:
+                                print("$"*10+"连接断开，抛出异常"+"$"*10+"\n",e)
+                                pass
+                else:
                     item = DangdangItem()
                     item["first_title_name"] = first_title_name
                     item["second_title_name"] = second_title_name
-                    item["third_title_name"] = third_title_name
+                    item["third_title_name"] = ''
                     temp = 0
-                    # while temp < 3031:
-                    while temp < 100:
+                    while True:
                         try:
                             next_url = "http://e.dangdang.com/media/api.go?action=mediaCategoryLeaf&start={}&end={}&category={}&dimension=dd_sale".format(
-                                str(temp), str(temp + 20), third_title_type)
-                            print("{}采集{}中{}".format("*" * 10, third_title_name, "*" * 10), next_url)
+                                str(temp), str(temp + 20), second_title_name)
+                            print("{}二级标题采集{}中{}".format("*" * 10, second_title_name, "*" * 10), next_url)
                             if re.search("亲，没有更多内容了", requests.get(next_url).text):
-                                print("{}{}已经采集结束{}".format("*" * 10, third_title_name, "*" * 10))
+                                print("{}{}二级标题已经采集结束{}".format("*" * 10, second_title_name, "*" * 10))
                                 break
                             time.sleep(2)
-                            yield scrapy.Request(next_url, callback=self.parse_detail, headers=headers, meta={"item": item},
+                            yield scrapy.Request(next_url, callback=self.parse_detail, headers=headers,
+                                                 meta={"item": item},
                                                  dont_filter=True)
                             temp = temp + 21
                         except Exception as e:
-                            print("$"*10+"连接断开，抛出异常"+"$"*10+"\n",e)
+                            print("$" * 10 + "连接断开，抛出异常" + "$" * 10 + "\n", e)
                             pass
 
     def parse_detail(self, response):
@@ -68,7 +91,8 @@ class DangbookSpider(spiders.RedisSpider):
             try:
                 authorPenname = content_list["mediaList"][0]["authorPenname"]
                 # print("作者名：", authorPenname)
-            except:
+            except Exception as e:
+                print("parse_detail++++++",e)
                 pass
             descs = content_list["mediaList"][0]["descs"]
             # print("简介：", descs)
@@ -86,10 +110,10 @@ class DangbookSpider(spiders.RedisSpider):
             item["authorPenname"] = authorPenname
             item["descs"] = descs
             item["title"] = title
-            item["originalPrice"] = originalPrice
-            item["lowestPrice"] = lowestPrice
-            item["vipPrice"] = vipPrice
-            item["mediaId"] = mediaId
+            item["originalPrice"] = float(originalPrice)
+            item["lowestPrice"] = float(lowestPrice)
+            item["vipPrice"] = float(vipPrice)
+            item["mediaId"] = int(mediaId)
             time.sleep(1)
             yield scrapy.Request(detail_url, callback=self.parse_detailPage, meta={"item": item}, dont_filter=True)
 
@@ -106,9 +130,10 @@ class DangbookSpider(spiders.RedisSpider):
                     1]
             content_score = response.xpath("//div[@class='count_per']/em[2]/text()").extract_first()
             item["publisher"] = publisher
-            item["publish_date"] = publish_date
-            item["content_num"] = content_num
-            item["content_score"] = content_score
+            item["publish_date"] = datetime.datetime.strptime(publish_date, "%Y-%m-%d")
+            item["content_num"] = float(content_num[:-1])
+            item["content_score"] = float(content_score)
             yield item
-        except:
+        except Exception as e:
+            print("parse_detailPage++++++",e)
             pass

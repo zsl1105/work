@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+
+    <title>{% block title %}首页{% endblock %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="{% static '/bootstrap-3.3.7-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+
+
+    <script>
+      var doc = document, docEl = doc.documentElement;
+      docEl.className = docEl.className.replace(/(^|\s)no-js(\s|$)/, " js ");
+    </script>
+    <script src="{% static '/jquery/jquery.js' %}"></script>
+<!--    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+    <script src="{% static '/js/responsive-nav.js' %}"></script>
+
+
+
+    
+  </head>
+  <body>
+        {% block content %}
+        <div role="navigation" id="nav">
+            <ul>
+                <li class="active"><a href="{% url 'user:park_base' %}">园区政策测算</a></li>
+            </ul>
+
+            <div class="dropdown-h">
+              <a href="{% url 'user:park_base' %}" class="dropbtn-h">南京市政策（企业）</a>
+              <div class="dropdown-content-h">
+                <a methods="POST" href="{% url 'user:park_base_result_yuhua' %}">雨花区政策（企业）</a>
+                <a href="{% url 'user:park_base_result_pukou' %}">浦口区（企业）</a>
+                <a href="{% url 'user:park_base_result_gulou' %}">鼓楼区政策</a>
+              </div>
+		    </div>
+            <div class="dropdown">
+                <a onclick="myFunction()" class="dropbtn">其他地区<b class="caret"></b></a>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <ul>
+                        <li><a href="#">常州市</a></li>
+                        <li><a href="#">苏州市</a></li>
+                        <li><a href="#">张家港市</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="{% url 'user:park_result' %}">查看已选项</a></li>
+            </ul>
+            <ul>
+                <li><a href="{% url 'user:message' %}">园区政策快速测算</a></li>
+            </ul>
+
+        </div>
+	    {% endblock %}
+
+    <div role="main" class="main">
+      <a href="#nav" id="toggle">Menu</a>
+      <h1>{{area}}</h1>
+        {% block content_middle %}
+        <form action="{% url 'user:park_result' %}" method="POST">
+            {% csrf_token %}
+            <table id="header_table">
+                <tr>
+<!--                    <td>ID</td>-->
+<!--                    <td>地区</td>-->
+                    <th class="td1" onclick="qx()"><a id="obj1" style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active">全选</a></th>
+<!--                    <th class="td1">选项</th>-->
+                    <th class="td2">详细类别</th>
+                    <th class="td3">奖项</th>
+                    <th class="td4">奖 励（万）</th>
+                    <th class="td5">附加奖励</th>
+                    <th class="td6">奖励要求</th>
+
+                </tr>
+            </table>
+            <table align="center">
+
+                {% for response in response2 %}
+                <tr>
+<!--                    <td>{{response.id}}</td>-->
+<!--                    <td>{{response.area}}</td>-->
+                    <td class="td1">
+                        <input type="checkbox" id="{{response.id}}" name="option" class="gcs-checkbox" value="{{response.id}}">
+	  	                <label for="{{response.id}}"></label>
+                    </td>
+                    <td class="td2">{{response.detail_type}}</td>
+                    <td class="td3">{{response.prize}}</td>
+                    <td class="td4">{{response.prize_money}}</td>
+                    <td class="td5">{{response.prize_attach}}</td>
+                    <td class="td6">{{response.prize_require}}</td>
+
+                </tr>
+                {% endfor %}
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button style="position: relative;left: 0px;top: 0px;" type="submit" class="btn btn-default btn-lg active">提交</button></td>
+                </tr>
+
+            </tfoot>
+            </table>
+
+        </form>
+        {% endblock %}
+    </div>
+
+    <script>
+      var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
+    </script>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39967427-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+	<script>
+		/* 点击按钮，下拉菜单在 显示/隐藏 之间切换 */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+		// 点击下拉菜单意外区域隐藏
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+		
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+    <script>
+        function qx(){
+            //第一步我们要获取所有的复选框
+            var obj1 = document.getElementById("obj1");
+            var option = document.getElementsByName("option");
+            var temp = false;
+           //alert(option.length);
+             for (var i=0;i<option.length;i++) {
+                 //赋值
+                 if (option[i].checked==false){
+                        temp = true;
+                        continue;
+                 }
+                 //option[i].checked=true;
+             }
+             if (temp==true){
+                for (var i=0;i<option.length;i++) {
+                    option[i].checked=true;
+                }
+                obj1.innerHTML= "取消全选";
+             }else{
+                for (var i=0;i<option.length;i++) {
+                    option[i].checked=false;
+                }
+                obj1.innerHTML= "全选";
+                temp = false;
+             }
+       }
+
+     </script>
+<!--    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
+    <script type="text/javascript">
+        var tableHd = $("#header_table");
+        var tableTop = tableHd.offset().top;
+        $(document).ready(function(){
+          $(document).scroll(function() {
+            var _t = $(document).scrollTop();
+            if(_t-tableTop>=0){
+                tableHd.css({
+                    "position":"fixed"
+                })
+            }else{
+                tableHd.css({
+                    "position":"static"
+                })
+            }
+          });
+        });
+    </script>
+  </body>
+</html>

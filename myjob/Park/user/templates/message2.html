@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block title %}核算{% endblock %}
+{% load static %}
+{% block content_middle %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6 col-md-offset-2">
+                <div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="mima">
+                            <div class="panel panel-default zhuce1">
+                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message' %}">基本信息</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message1' %}">知识成果</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message2' %}">研发水平</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message3' %}">财务信息</a></button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div style="text-align:center">研发水平</div>
+                                    <form class="form-horizontal" action="{% url 'user:message2'%}"
+                                          method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <input type="hidden" name="result_list" value="{{result_list}}">
+                                            <div class="col-md-10">
+                                                <label for="member">1.企业是否制定了研究开发的组织管理制度，建立了研发投入核算体系，编制了研发费用辅助账？</label>
+                                                    <select name="system" class="form-control">
+                                                        <option>是</option>
+                                                        <option>否</option>
+
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-10">
+                                                <label for="member">2.企业是否建立了科技人员的培养进修、职工技能培训、优秀人才引进，以及人才绩效评价奖励制度？</label>
+                                                    <select name="culture" class="form-control">
+                                                        <option>是</option>
+                                                        <option>否</option>
+
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-10">
+                                                <label for="member">3.企业是否签订产学研合作协议？</label>
+                                                    <select name="industry" class="form-control">
+                                                        <option>是</option>
+                                                        <option>否</option>
+
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-10">
+                                                <label for="member">4.企业是否建立开放式的创新创业平台？</label>
+                                                    <select name="innovation" class="form-control">
+                                                        <option>是</option>
+                                                        <option>否</option>
+
+                                                    </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <button type="submit" class="btn btn-primary  zhucebtn2">下一步
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

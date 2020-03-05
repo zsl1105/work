@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block title %}核算{% endblock %}
+{% load static %}
+{% block content_middle %}
+
+<h5 style="text-align: center ; color: red ;">{{msg}}</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6 col-md-offset-2">
+                <div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="mima">
+                            <div class="panel panel-default zhuce1">
+                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message' %}">基本信息</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message1' %}">知识成果</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message2' %}">研发水平</a></button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default"><a href="{% url 'user:message3' %}">财务信息</a></button>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+
+                                    <div style="text-align:center">基本信息</div>
+                                    <form class="form-horizontal" action="{% url 'user:message' %}"
+                                          method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+
+                                        <div class="form-group">
+                                            <input type="hidden" name="next" value="{{next_url}}">
+                                            <div class="col-md-10">
+                                                <label for="pwd1">1.公司名称</label>
+                                                <input type="text" class="form-control"
+                                                       name="name" id="pwd1" placeholder="请输入公司名称">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+
+                                            <div class="col-md-10">
+                                                <label for="member">2.公司规模</label>
+                                                    <select name="member" class="form-control">
+                                                        <option>10人以下</option>
+                                                        <option>10-50人</option>
+                                                        <option>50-300人</option>
+                                                        <option>300人以上</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <div class="col-md-10">
+                                                <label for="area">3.所属行业</label>
+                                                    <select name="area" class="form-control">
+                                                        <option>上市企业</option>
+                                                        <option>军民两用企业</option>
+                                                        <option>软件</option>
+                                                        <option>股权投资企业</option>
+                                                        <option>集成电路</option>
+                                                        <option>楼宇企业</option>
+                                                        <option>总部企业</option>
+                                                        <option>其他</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <button type="submit" class="btn btn-primary  zhucebtn2">下一步
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

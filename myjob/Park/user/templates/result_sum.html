@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}核算{% endblock %}
+{% load static %}
+{% block content_middle %}
+<br>
+<form class="col-md-2" action="{% url 'user:result_sum'%}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="hidden" name="result" value="{{yuhua_result}}">
+    <button type="submit" style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" >雨花台区</button>
+
+</form>
+<form class="col-md-2" action="{% url 'user:result_sum'%}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="hidden" name="result" value="{{pukou_result}}">
+    <button type="submit" style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" >浦口区</button>
+
+</form>
+<form class="col-md-2" action="{% url 'user:result_sum'%}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="hidden" name="result" value="{{gulou_result}}">
+    <button type="submit" style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" >鼓楼区</button>
+
+</form>
+
+<hr>
+<h2>{{result_last_area}}</h2>
+<h2>总和为：{{prizes}}万</h2>
+<h2>详情如下：</h2>
+<table align="center">
+    <tr>
+<!--                    <td>ID</td>-->
+        <td class="td2">地区</td>
+        <th class="td2">详细类别</th>
+        <th class="td3">奖项</th>
+        <th class="td4">奖 励（万）</th>
+        <th class="td5">附加奖励</th>
+        <th class="td6">奖励要求</th>
+
+    </tr>
+    {% for response in prize_money_list %}
+    <tr>
+<!--                    <td>{{response.id}}</td>-->
+        <td class="td1">{{response.area}}</td>
+        <td class="td2">{{response.detail_type}}</td>
+        <td class="td3">{{response.prize}}</td>
+        <td class="td4">{{response.prize_money}}</td>
+        <td class="td5">{{response.prize_attach}}</td>
+        <td class="td6">{{response.prize_require}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
+
+

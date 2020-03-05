@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}核算{% endblock %}
+{% load static %}
+{% block content_middle %}
+<br>
+<a style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" href="{% url 'user:park_base' %}">继续添加</a>
+<a style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" href="{% url 'user:result_del_all' %}" onclick="return confirm('确认全部删除吗')">删除全部</a>
+<a style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" href="{% url 'user:result_sum' %}">计算结果</a>
+<table align="center">
+
+		<tr>
+	<!--                    <td>ID</td>-->
+			<td class="td1">地区</td>
+			<th class="td2">详细类别</th>
+			<th class="td3">奖项</th>
+			<th class="td4">奖 励（万）</th>
+			<th class="td5">附加奖励</th>
+			<th class="td6">奖励要求</th>
+			<th class="td7">操作</th>
+
+		</tr>
+
+    {% for response in response1 %}
+    <tr>
+<!--                    <td>{{response.id}}</td>-->
+        <td class="td1">{{response.area}}</td>
+        <td class="td2">{{response.detail_type}}</td>
+        <td class="td3">{{response.prize}}</td>
+        <td class="td4">{{response.prize_money}}</td>
+        <td class="td5">{{response.prize_attach}}</td>
+        <td class="td6">{{response.prize_require}}</td>
+        <td class="td7"><a style="position: relative;left: 0px;top: 0px;" class="btn btn-default btn-lg active" href="{% url 'user:result_del' response.id %}" onclick="return confirm('确认删除吗')">删除</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

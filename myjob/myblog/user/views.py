@@ -28,13 +28,60 @@ def export(request, object_list):
     # for item in object_list:
     #     a_id = item.object.id
     #     at = models.Startup.objects.get(pk=a_id)
-    #     print(at)
-    # return render(request, 'user/article_show.html', {'at': at})
+    #     #     print(at)
+    #     # return render(request, 'user/article_show.html', {'at': at})
+
+
+# 文章修改
+
+def article_update(request, a_id):
+    article = models.expertdetails.objects.get(pk=a_id)
+    if request.method == 'GET':
+        return render(request, 'user/article_update.html', {'article': article})
+    else:
+        name = request.POST['name'].strip()
+        organization = request.POST['organization'].strip()
+        positionalitles = request.POST['positionalitles'].strip()
+        abstract = request.POST['abstract'].strip()
+        focusareas = request.POST['focusareas'].strip()
+        fund = request.POST['fund'].strip()
+        subjects = request.POST['subjects'].strip()
+        email = request.POST['email'].strip()
+        tel = request.POST['tel'].strip()
+
+
+        # if area == '':
+        #     return HttpResponse("领域不能为空！！！")
+        #     # return redirect(reverse('user:article_update', kwargs={'a_id': article.id}))
+        # if company == '':
+        #     return HttpResponse("公司不能为空！！！")
+        #     # return render(request, 'user/article_update.html', {'msg': '公司名不能为空'})
+        try:
+            article.name = name
+            article.organization = organization
+            article.positionalitles = positionalitles
+            article.abstract = abstract
+            article.focusareas = focusareas
+            article.fund = fund
+            article.subjects = subjects
+            article.email = email
+            article.tel = tel
+
+
+            article.save()
+            # 更新缓存
+            utils.cache_allarticle(ischange=True)
+            utils.cache_article(request, ischange=True)
+            # 重定向到详情页面
+            return redirect(reverse('user:article_show', kwargs={'a_id': article.id}))
+        except Exception as e:
+            print(e, '修改失败')
+            return render(request, 'user/article_update.html', {'msg': '修改失败'})
 
 
 # 展示文章详情
 def article_show(request, a_id):
-    at = models.Startup.objects.get(pk=a_id)
+    at = models.expertdetails.objects.get(pk=a_id)
     return render(request, 'user/article_show.html', {'at': at})
 
 
@@ -43,7 +90,7 @@ def index(request):
     # 当前页
     pageNow = int(request.GET.get('pageNow', 1))
     # 展示所有文章
-    articles = models.Startup.objects.all().order_by()
+    articles = models.expertdetails.objects.all().order_by()
     pagesize = settings.PAGESIZE
     paginator = Paginator(articles, pagesize)
     page = paginator.page(pageNow)
@@ -95,7 +142,7 @@ def login(request):
         except:
             next_url = '/'
 
-        return render(request, 'user/login.html', {'msg': '请填写登录信息！', 'next_url': next_url})
+        return render(request, 'user/message.html', {'msg': '请填写登录信息！', 'next_url': next_url})
     elif request.method == 'POST':
         request.session['num'] += 1
         name = request.POST['name'].strip()
@@ -107,18 +154,18 @@ def login(request):
             try:
                 code = request.POST['code'].strip()
                 if request.session['code'].upper() != code.upper():
-                    return render(request, 'user/login.html', {'msg': '验证码错误'})
+                    return render(request, 'user/message.html', {'msg': '验证码错误'})
                 else:
                     request.session['num'] = 0
             except:
-                return render(request, 'user/login.html', {'msg': '验证码不能为空'})
+                return render(request, 'user/message.html', {'msg': '验证码不能为空'})
 
         # 判断用户
         # 这种方式检测密码 跟 自己写的加密方式不同 不能判断用户
         # user1 = authenticate(name=name, pwd=pwd)
         user = models.User.objects.get(name=name)
         if user is None:
-            return render(request, 'user/login.html', {'msg': '用户名不存在'})
+            return render(request, 'user/message.html', {'msg': '用户名不存在'})
         # 判断密码
         # if user[0].pwd == hash_256(pwd):
         if user.pwd == hash_256(pwd):
@@ -133,7 +180,7 @@ def login(request):
             # return redirect(reverse('user:index'))
             # return render(request, 'user/index.html', {'user': user[0]})
         else:
-            return render(request, 'user/login.html', {'msg': '用户名或密码错误'})
+            return render(request, 'user/message.html', {'msg': '用户名或密码错误'})
 
 
 # 展示个人信息
@@ -267,55 +314,6 @@ def article_add(request):
             return render(request, 'user/article_add.html', {'msg': '文章保存失败'})
 
 
-# 文章修改
-
-def article_update(request, a_id):
-    article = models.Startup.objects.get(pk=a_id)
-    if request.method == 'GET':
-        return render(request, 'user/article_update.html', {'article': article})
-    else:
-        area = request.POST['area'].strip()
-        platform = request.POST['platform'].strip()
-        address = request.POST['address'].strip()
-        web = request.POST['web'].strip()
-        state = request.POST['state'].strip()
-        phone = request.POST['phone'].strip()
-        mail = request.POST['mail'].strip()
-        project = request.POST['project'].strip()
-        finance = request.POST['finance'].strip()
-        introduction = request.POST['introduction'].strip()
-        company = request.POST['company'].strip()
-
-        # if area == '':
-        #     return HttpResponse("领域不能为空！！！")
-        #     # return redirect(reverse('user:article_update', kwargs={'a_id': article.id}))
-        # if company == '':
-        #     return HttpResponse("公司不能为空！！！")
-        #     # return render(request, 'user/article_update.html', {'msg': '公司名不能为空'})
-        try:
-            article.area = area
-            article.platform = platform
-            article.address = address
-            article.web = web
-            article.state = state
-            article.phone = phone
-            article.mail = mail
-            article.project = project
-            article.finance = finance
-            article.introduction = introduction
-            article.company = company
-
-            article.save()
-            # 更新缓存
-            utils.cache_allarticle(ischange=True)
-            utils.cache_article(request, ischange=True)
-            # 重定向到详情页面
-            return redirect(reverse('user:article_show', kwargs={'a_id': article.id}))
-        except Exception as e:
-            print(e, '修改失败')
-            return render(request, 'user/article_update.html', {'msg': '修改失败'})
-
-
 # 删除文章
 
 def article_del(request, a_id):
@@ -386,7 +384,7 @@ def reg_email(request):
             href = "http://ww.ljh.com/blog/active/" + code + "/"
             m_html = '<a href="' + href + '" target="_blank">马上点击激活，一个小时内有效</a>'
             send_mail(m_title, m_msg, settings.EMAIL_FROM, [email], html_message=m_html)
-            return render(request, "user/login.html", {"msg": "恭喜您，注册成功，请登录邮箱激活账号！！"})
+            return render(request, "user/message.html", {"msg": "恭喜您，注册成功，请登录邮箱激活账号！！"})
         except Exception as e:
             print(e, 111111111111111)
             return render(request, "user/register.html", {"msg": "恭喜您，注册成功，邮箱发送失败，请点击重新发送"})
@@ -402,7 +400,7 @@ def active(request, token):
         user = models.User.objects.get(pk=active_id)
         user.is_active = True
         user.save()
-        return render(request, "user/login.html", {"msg": "恭喜您，激活账号成功，请登录！！"})
+        return render(request, "user/message.html", {"msg": "恭喜您，激活账号成功，请登录！！"})
     except Exception as e:
         return HttpResponse("激活失败")
 

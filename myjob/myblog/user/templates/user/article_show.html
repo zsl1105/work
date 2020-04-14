@@ -25,48 +25,36 @@
                                             <hr>
                                             <h2 style="text-align: center ">{{at.name}}</h2>
                                             <hr>
-                                            <h5 style="text-align: right">
+                                            <h5 style="text-align: left">
 
-                                                领域：{{at.area}} |
-                                                平台：{{at.platform}} |
-                                                地址：{{at.address}} |
-                                                网址：{{at.web}} |
-                                                创立时间：{{at.start_time}} |
-                                                状态：{{at.state}}
+                                                学校：{{at.organization}}
+                                                —————————————————————————————————————————————————————————
+                                                职称：{{at.positionalitles}}
+                                                —————————————————————————————————————————————————————————
+                                                <br>
+                                                研究课题：{{at.focusareas}}
+                                                —————————————————————————————————————————————————————————
+                                                <br>
+                                                基金：{{at.fund}}
+                                                —————————————————————————————————————————————————————————
+                                                课程：{{at.subjects}}
                                                 <hr>
-                                                电话：{{at.phone}} |
-                                                邮箱：{{at.mail}}
+                                                {% if request.session.loginuser %}
+                                                电话：{{at.tel}} |
+                                                邮箱：{{at.email}}
+                                                {% endif %}
                                             </h5>
                                             <hr>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <h4>项目介绍：</h4>
+                                        <h4>简介：</h4>
                                         <div class="col-md-12" style="text-indent: 2em;">
-                                            <h4>{{at.project|safe}}</h4>
+                                            <h4>{{at.abstract|safe}}</h4>
                                         </div>
                                     </div>
                                     —————————————————————————————————————————————————————————
-                                    <div class="form-group">
-                                        <h4>融资历史：</h4>
-                                        <div class="col-md-12" style="text-indent: 2em;">
-                                            <h4>{{at.finance|safe}}</h4>
-                                        </div>
-                                    </div>
-                                    —————————————————————————————————————————————————————————
-                                    <div class="form-group">
-                                        <h4>公司简介：</h4>
-                                        <div class="col-md-12" style="text-indent: 2em;">
-                                            <h4>{{at.introduction|safe}}</h4>
-                                        </div>
-                                    </div>
-                                    —————————————————————————————————————————————————————————
-                                    <div class="form-group">
-                                        <h4>公司：</h4>
-                                        <div class="col-md-12" style="text-indent: 2em;">
-                                            <h4>{{at.company|safe}}</h4>
-                                        </div>
-                                    </div>
+
 
 
                                 </div>

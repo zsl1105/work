@@ -25,73 +25,51 @@
                                         <div class="form-group">
                                             <div class="col-md-12"><label for="pwd1">项目名：{{article.name}}</label></div>
                                             <div class="col-md-12">
-                                                <label for="pwd1">领域</label>
+                                                <label for="pwd1">学校</label>
                                                 <h5 style="text-align: center ; color: red ;" id="msg">{{msg}}</h5>
                                                 <input type="text" class="form-control" name="area" required="required"
-                                                       id="area" placeholder="请输入领域" value="{{article.area}}">
+                                                       id="area" placeholder="请输入领域" value="{{article.organization}}">
                                             </div>
                                             <div class="col-md-12">
-                                                <label for="pwd1">平台</label>
+                                                <label for="pwd1">职称</label>
                                                 <input type="text" class="form-control" name="platform" id="pwd1"
-                                                       value="{{article.platform}}">
+                                                       value="{{article.positionalitles}}">
                                             </div>
                                             <div class="col-md-12">
-                                                <label for="pwd1">地址</label>
+                                                <label for="pwd1">研究课题</label>
                                                 <input type="text" class="form-control" name="address" id="pwd1"
-                                                       value="{{article.address}}">
+                                                       value="{{article.focusareas}}">
                                             </div>
                                             <div class="col-md-12">
-                                                <label for="pwd1">网址</label>
+                                                <label for="pwd1">基金</label>
                                                 <input type="text" class="form-control" name="web" id="pwd1"
-                                                       value="{{article.web}}">
+                                                       value="{{article.fund}}">
                                             </div>
-                                            <div class="col-md-12"><label for="pwd1">创立时间：{{article.start_time}}</label>
-                                            </div>
+
                                             <div class="col-md-12">
-                                                <label for="pwd1">状态</label>
+                                                <label for="pwd1">课程</label>
                                                 <input type="text" class="form-control" name="state" id="pwd1"
-                                                       value="{{article.state}}">
+                                                       value="{{article.subjects}}">
                                             </div>
                                             <div class="col-md-12">
                                                 <label for="pwd1">电话</label>
                                                 <input type="text" class="form-control" name="phone" id="pwd1"
-                                                       value="{{article.phone}}">
+                                                       value="{{article.tel}}">
                                             </div>
                                             <div class="col-md-12">
                                                 <label for="pwd1">邮箱</label>
                                                 <input type="text" class="form-control" name="mail" id="pwd1"
-                                                       value="{{article.mail}}">
+                                                       value="{{article.email}}">
                                             </div>
                                         </div>
                                         <div class="form-group">
 
                                             <div class="col-md-12">
-                                                <label for="pwd3">项目介绍</label>
-                                                <textarea class="form-control" rows="15" id="pwd3" name="project">{{article.project|safe}}</textarea>
+                                                <label for="pwd3">简介</label>
+                                                <textarea class="form-control" rows="15" id="pwd3" name="project">{{article.abstract|safe}}</textarea>
                                             </div>
                                         </div>
-                                        <div class="form-group">
 
-                                            <div class="col-md-12">
-                                                <label for="pwd3">融资历史</label>
-                                                <textarea class="form-control" rows="15" id="pwd3" name="finance">{{article.finance|safe}}</textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-
-                                            <div class="col-md-12">
-                                                <label for="pwd3">公司简介</label>
-                                                <textarea class="form-control" rows="15" id="pwd3" name="introduction">{{article.introduction|safe}}</textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-
-                                            <div class="col-md-12">
-                                                <label for="pwd3">公司名</label>
-                                                <textarea class="form-control" rows="15" id="pwd3" required="required"
-                                                          name="company">{{article.company|safe}}</textarea>
-                                            </div>
-                                        </div>
 
                                         <div class="form-group">
                                             <div class="col-sm-3 col-sm-offset-10">

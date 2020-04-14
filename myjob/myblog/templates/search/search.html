@@ -27,12 +27,13 @@
                 <thead>
                 <tr>
                     <th>id</th>
-                    <th>项目名</th>
-                    <th>分类</th>
-                    <th>公司名</th>
-                    <th>项目介绍</th>
-                    <th>融资历史</th>
-                    <th>公司简介</th>
+                    <th>名字</th>
+                    <th>学校</th>
+                    <th>职称</th>
+                    <th>简介</th>
+                    <th>研究课题</th>
+                    <th>基金</th>
+                    <th>课程</th>
                     <th>邮箱</th>
                     <th>电话</th>
                     <th>操作</th>
@@ -43,13 +44,14 @@
                 <tr>
                     <th scope="row">{{result.object.id}}</th>
                     <td>{{result.object.name}}</td>
-                    <td>{{result.object.area}}</td>
-                    <td>{{result.object.company}}</td>
-                    <td>{{result.object.project|safe}}</td>
-                    <td>{{result.object.finance|safe}}</td>
-                    <td>{{result.object.introduction|safe}}</td>
-                    <td>{{result.object.mail}}</td>
-                    <td>{{result.object.phone}}</td>
+                    <td>{{result.object.organization}}</td>
+                    <td>{{result.object.positionalitles}}</td>
+                    <td>{{result.object.abstract|safe}}</td>
+                    <td>{{result.object.focusareas|safe}}</td>
+                    <td>{{result.object.fund|safe}}</td>
+                    <td>{{result.object.subjects}}</td>
+                    <td>{{result.object.email}}</td>
+                    <td>{{result.object.tel}}</td>
                     <td><a href="/article_show/{{result.object.id}}/">查看</a></td>
                 </tr>
                 {% empty %}

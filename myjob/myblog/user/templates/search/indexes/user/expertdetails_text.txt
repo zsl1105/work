@@ -1,0 +1,10 @@
+{{ object.name }}
+{{ object.organization }}
+{{ object.positionalitles }}
+{{ object.abstract }}
+{{ object.focusareas }}
+{{ object.fund }}
+{{ object.subjects }}
+{{ object.email }}
+{{ object.tel }}
+

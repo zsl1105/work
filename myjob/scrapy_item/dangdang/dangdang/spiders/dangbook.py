@@ -33,6 +33,7 @@ class DangbookSpider(spiders.RedisSpider):
             print("一级标题——————", first_title_name)
             for second_title_list in first_title.xpath(".//ul/li"):
                 second_title_name = second_title_list.xpath(".//a/h4/@dd_name").extract_first()
+                second_title_type = second_title_list.xpath(".//a/h4/@data-type").extract_first()
                 print("二级标题——————", second_title_name)
                 if second_title_list.xpath(".//ul/a"):
                     for third_title_list in second_title_list.xpath(".//ul/a"):
@@ -44,6 +45,7 @@ class DangbookSpider(spiders.RedisSpider):
                         item["second_title_name"] = second_title_name
                         item["third_title_name"] = third_title_name
                         temp = 0
+
                         while True:
                             try:
                                 next_url = "http://e.dangdang.com/media/api.go?action=mediaCategoryLeaf&start={}&end={}&category={}&dimension=dd_sale".format(
@@ -52,7 +54,7 @@ class DangbookSpider(spiders.RedisSpider):
                                 if re.search("亲，没有更多内容了", requests.get(next_url).text):
                                     print("{}{}已经采集结束{}".format("*" * 10, third_title_name, "*" * 10))
                                     break
-                                time.sleep(2)
+                                # time.sleep(2)
                                 yield scrapy.Request(next_url, callback=self.parse_detail, headers=headers, meta={"item": item},
                                                      dont_filter=True)
                                 temp = temp + 21
@@ -68,12 +70,12 @@ class DangbookSpider(spiders.RedisSpider):
                     while True:
                         try:
                             next_url = "http://e.dangdang.com/media/api.go?action=mediaCategoryLeaf&start={}&end={}&category={}&dimension=dd_sale".format(
-                                str(temp), str(temp + 20), second_title_name)
+                                str(temp), str(temp + 20), second_title_type)
                             print("{}二级标题采集{}中{}".format("*" * 10, second_title_name, "*" * 10), next_url)
                             if re.search("亲，没有更多内容了", requests.get(next_url).text):
                                 print("{}{}二级标题已经采集结束{}".format("*" * 10, second_title_name, "*" * 10))
                                 break
-                            time.sleep(2)
+                            # time.sleep(2)
                             yield scrapy.Request(next_url, callback=self.parse_detail, headers=headers,
                                                  meta={"item": item},
                                                  dont_filter=True)
@@ -114,7 +116,7 @@ class DangbookSpider(spiders.RedisSpider):
             item["lowestPrice"] = float(lowestPrice)
             item["vipPrice"] = float(vipPrice)
             item["mediaId"] = int(mediaId)
-            time.sleep(1)
+            # time.sleep(1)
             yield scrapy.Request(detail_url, callback=self.parse_detailPage, meta={"item": item}, dont_filter=True)
 
     def parse_detailPage(self, response):
@@ -130,7 +132,10 @@ class DangbookSpider(spiders.RedisSpider):
                     1]
             content_score = response.xpath("//div[@class='count_per']/em[2]/text()").extract_first()
             item["publisher"] = publisher
-            item["publish_date"] = datetime.datetime.strptime(publish_date, "%Y-%m-%d")
+            if publish_date:
+                item["publish_date"] = datetime.datetime.strptime(publish_date, "%Y-%m-%d")
+            else:
+                item["publish_date"] = None
             item["content_num"] = float(content_num[:-1])
             item["content_score"] = float(content_score)
             yield item

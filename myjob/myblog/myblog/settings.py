@@ -27,7 +27,7 @@ SECRET_KEY = 'lo%8p%^5y@-8v58y-hce$^3%*81bzw_asu807)u7is7h^whigf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.3.67', ]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -168,7 +168,7 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 2000
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # 分页
-PAGESIZE = 30
+PAGESIZE = 20
 
 # 邮箱注册
 # qq IMAP/SMTP 配置

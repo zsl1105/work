@@ -91,18 +91,21 @@
     <div class="row">
         {% block mid %}
         <div class="col-md-6 col-md-offset-1" style="margin-top: 50px">
-            <p style="font-size:x-large">热门项目:
+            <p style="font-size:x-large">热门简历:
             <p>
                 <ul>
                     {% for article in page.object_list %}
-                    <li>{{article.project|truncatechars:100|safe}}
-                    </li>
-                    <br>
 
                     <li style="font-size:large"><a href="{% url 'user:article_show' article.id%}">{{article.name|truncatechars:20|safe}}</a>
                     </li>
+                    <br>
+                    <li>学校：{{article.organization|truncatechars:100|safe}}
+                    </li>
+                    <li>课程：{{article.subjects|truncatechars:100|safe}}
+                    </li>
+
                     <li style="font-size:medium">
-            <p>分类：{{article.area|truncatechars:20|safe}}</p></li>
+            <p>简介：{{article.abstract|truncatechars:20|safe}}</p></li>
             <hr>
             {% endfor %}
             </ul>

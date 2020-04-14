@@ -60,3 +60,16 @@ class Startup(models.Model):
     finance = models.TextField(null=True)
     introduction = models.TextField(null=True)
     company = models.TextField(null=True)
+
+
+class expertdetails(models.Model):
+    id = models.AutoField(primary_key=True, verbose_name='标识')
+    name = models.CharField(max_length=255, null=True)
+    organization = models.CharField(max_length=200, null=True)
+    positionalitles = models.CharField(max_length=200, null=True)
+    abstract = models.TextField(null=True)
+    focusareas = models.CharField(max_length=1000, null=True)
+    fund = models.CharField(max_length=1000, null=True)
+    subjects = models.CharField(max_length=1000, null=True)
+    email = models.CharField(max_length=100, null=True)
+    tel = models.CharField(max_length=100, null=True)

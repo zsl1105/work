@@ -13,5 +13,4 @@ import os
 # sys.path.append  插入到环境变量
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-execute(['scrapy', 'crawl', 'dangbook'])
+execute(['scrapy', 'crawl', 'dangbook', '-s', 'JOBDIR=crawls/dangbook-1'])

@@ -74,7 +74,7 @@ def result_sum(request):
         for article in articles:
             prize = article.prize_money
             try:
-                prizes = prizes + int(prize)
+                prizes = prizes + float(prize)
             except:
                 id = article.id
                 prizes_id_list.append(id)
